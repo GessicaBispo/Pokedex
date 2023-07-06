@@ -1,0 +1,315 @@
+
+
+  
+  #modal.hide {
+    display: none;
+  }
+  
+  #modal .content {
+    color: white;
+    width: 420px;
+    
+  }
+  
+  #modal .header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 0.5rem;
+    
+  }
+  
+  #modal .header a {
+    background-image: url(../icons/x.svg);
+    margin-left: 2rem;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    font-size: 0.01em;
+  }
+  
+  
+  #modal .poke-details {
+    color: white;
+  }
+  
+  #modal .info {
+    display: flex;
+    justify-content: space-evenly;
+    
+   
+  }
+ 
+  #modal .info h1,
+  span {
+    text-transform: capitalize;
+    color: white;
+    display: flex;
+    align-items: center;
+    
+    
+  }
+  
+  #modal .details {
+    display: flex;
+    justify-content: center;
+    
+   
+  }
+  
+  #modal .typeDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 1rem;
+   
+  }
+  
+  #modal .details img {
+    max-width: 100%;
+   
+    margin-left: 1rem;
+   
+  }
+  
+  #modal .details h3 {
+    color: #ffffff;
+    font-size: 0.625rem;
+    padding: 0.25rem 0.5rem;
+    text-transform: capitalize;
+    border-radius: 1rem;
+    text-align: center;
+    justify-content: center;
+    width: 4rem;
+    height: 1.2rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  
+ 
+
+  @media screen and (min-width: 300px) {
+    
+    #modal {
+     
+       border:#cc7d55;
+       min-width: fit-content;
+       height: fit-content;
+       position: absolute;
+       top: 2%;
+       right: 5%;
+       left: 5%;
+    
+        line-height: 20px;
+        transition: 400ms;
+        padding: 0.5rem;
+        
+        border-radius: 0.8rem;
+        font-size: 0.725rem;
+        background-color:  #36987d;
+    }
+    #modal .header h1 {      
+        font-size: 22px;
+       
+        line-height: 35px;
+     
+      }
+      #modal .header{
+        justify-content: center;
+      }
+      .info h1{
+        font-size: 17px;
+        
+      }
+      #back{
+        background-color: #cc7d55;
+        width: 100%;
+        height:fit-content;
+        padding: 5px;
+        border-radius: 20px;
+     
+      }
+      #modal .details img{
+        
+        width:7rem;
+        border: 0;
+        padding:0;
+      }
+      #modal .stats {
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+        justify-items: start;
+        align-items: center;
+        grid-column-gap:20px;
+        
+       
+       
+        
+      }
+      #statsETitulo{
+        background-color: #147b5e;
+        border-radius: 10px;
+        padding: 10px;
+      }
+      
+      #modal .about {
+        padding: 0.5rem;
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+        align-items: baseline;
+        justify-items: center;
+        grid-column-gap:10px;
+      }
+       
+       #abi{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+       }
+       #abilityEtitulo{
+        background-color: #147b5e;
+    border-radius: 10px;
+    padding: 0.3rem;
+    
+       }
+  #modal .about h2,
+  h3,
+  h4 {
+    text-transform: capitalize;
+    font-size:0.7rem;
+    margin: 0.2rem;
+  }
+#modal .about h1, .header h1{
+  font-size: 1.15rem;
+  color: rgb(19, 18, 18);
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+#modal .header h1 {
+ 
+  font-size: 20px;
+ 
+}
+
+
+}
+@media screen and (min-width: 400px) {
+  #modal {
+     
+     
+     right: 10%;
+     left: 10%;
+      line-height: 20px;
+      
+  }
+ 
+   
+    
+    #modal .details img{
+      
+      width:9rem;
+     
+    }
+    
+#modal .about h2,
+h3,
+h4 {
+ 
+  font-size: 0.9rem;
+  margin: 0.2rem;
+  line-height: 1rem;
+}
+#modal .about h1{
+font-size: 20px;
+
+
+
+}
+}
+@media screen and (min-width: 600px) {
+ 
+    
+    #modal .details img{
+      
+      width:9.5rem;
+      
+    }
+    
+    
+#modal .about h2,
+h3,
+h4 {
+ 
+  font-size: 1rem;
+  margin: 0.2rem;
+  line-height: 1.3rem;
+}
+#modal .about h1{
+font-size: 20px;
+
+
+}
+
+}
+
+
+
+@media screen and (min-width: 800px) {
+  #modal {
+    
+    
+    height: fit-content;
+    min-width: 4rem;
+
+    
+  }
+
+  #modal .header h1 {      
+    font-size: 1.6rem;
+   
+    line-height: 35px;
+  }
+  
+  #abilityEtitulo{
+    padding: 20px;
+  }
+  
+  #modal .info h1{
+    font-size: 20px;
+  }
+  #modal .about{
+  justify-items: stretch;
+  display: grid;
+  }
+  #modal .stats {
+    
+    justify-items: center;
+   
+  }
+  #modal .about h2, h3, h4 {
+    display: grid;
+    justify-items: center;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+#modal .details img {
+  width: 10rem;
+}
+#modal .header h1{
+  font-size: 2rem;
+}
+#modal .about h1 {
+  font-size: 1.5rem;
+}
+#abilityEtitulo {
+  padding: 10px;
+}
+
+
+
+}
+
